@@ -1,5 +1,5 @@
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-const drawerWidth = 240;
+import bg from './../../../../assets/bg-tweed-pattern.png';
 
 export const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -14,8 +14,8 @@ export const useStyles = makeStyles((theme: Theme) =>
             }),
         },
         appBarShift: {
-            marginLeft: drawerWidth,
-            width: `calc(100% - ${drawerWidth}px)`,
+            marginLeft: theme.appDrawer.width,
+            width: `calc(100% - ${theme.appDrawer.width}px)`,
             transition: theme.transitions.create(['width', 'margin'], {
                 easing: theme.transitions.easing.sharp,
                 duration: theme.transitions.duration.enteringScreen,
@@ -28,12 +28,13 @@ export const useStyles = makeStyles((theme: Theme) =>
             display: 'none',
         },
         drawer: {
-            width: drawerWidth,
+            width: theme.appDrawer.width,
             flexShrink: 0,
             whiteSpace: 'nowrap',
+            backgroundImage: `url(${bg})`,
         },
         drawerOpen: {
-            width: drawerWidth,
+            width: theme.appDrawer.width,
             transition: theme.transitions.create('width', {
                 easing: theme.transitions.easing.sharp,
                 duration: theme.transitions.duration.enteringScreen,
@@ -45,7 +46,7 @@ export const useStyles = makeStyles((theme: Theme) =>
                 duration: theme.transitions.duration.leavingScreen,
             }),
             overflowX: 'hidden',
-            width: theme.spacing(7) + 1,
+            width: 0,
             [theme.breakpoints.up('sm')]: {
                 width: theme.spacing(9) + 1,
             },
@@ -55,11 +56,16 @@ export const useStyles = makeStyles((theme: Theme) =>
             alignItems: 'center',
             justifyContent: 'flex-end',
             padding: theme.spacing(0, 1),
-            ...theme.mixins.toolbar,
+            height: theme.appDrawer.height,
         },
         content: {
             flexGrow: 1,
-            padding: theme.spacing(3, 3, 1, 3),
+            [theme.breakpoints.only('xs')]: {
+                padding: theme.spacing(1),
+            },
+            [theme.breakpoints.up('sm')]: {
+                padding: theme.spacing(3, 3, 1, 3),
+            },
             minHeight: '100vh',
         },
         container: {
@@ -68,5 +74,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         title: {
             flexGrow: 1,
         },
+        brand: {},
     }),
 );

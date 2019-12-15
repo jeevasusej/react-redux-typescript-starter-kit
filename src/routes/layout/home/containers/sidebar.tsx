@@ -1,8 +1,18 @@
 import React from 'react';
-import { IconButton, Divider, Drawer, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import {
+    IconButton,
+    Divider,
+    Drawer,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    MuiThemeProvider,
+    ListItemAvatar,
+    Avatar,
+} from '@material-ui/core';
 import clsx from 'clsx';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import InboxIcon from '@material-ui/icons/Inbox';
 import MailIcon from '@material-ui/icons/Mail';
 import { useStyles } from '../styles/layout';
@@ -11,6 +21,8 @@ import { LayoutRootType } from '../types';
 import { connect } from 'react-redux';
 import { toggleSidebar } from '../actions/actions';
 import { DynamicModuleLoader } from 'redux-dynamic-modules';
+import { sidebarTheme } from '../styles/sidebarTheme';
+import brand from './../../../../assets/react-brand.png';
 
 interface SidebarProps {
     open: boolean;
@@ -24,30 +36,24 @@ function Sidebar(props: SidebarProps) {
     const toggleDrawer = () => {
         toggleOpen();
     };
-    return (
-        <Drawer
-            variant="permanent"
-            className={clsx(classes.drawer, {
-                [classes.drawerOpen]: open,
-                [classes.drawerClose]: !open,
-            })}
-            classes={{
-                paper: clsx({
-                    [classes.drawerOpen]: open,
-                    [classes.drawerClose]: !open,
-                }),
-            }}
-            open={open}
-        >
-            <div className={classes.toolbar}>
-                <IconButton onClick={toggleDrawer}>
-                    <ChevronLeftIcon />
-                </IconButton>
-            </div>
+    const selectedMenu = 'Inbox';
+    const menus = (
+        <React.Fragment>
+            <ListItem alignItems="flex-start" className={classes.toolbar}>
+                <ListItemAvatar>
+                    <Avatar alt="Remy Sharp" src={brand} />
+                </ListItemAvatar>
+                <ListItemText primary="React App" />
+                <div className={classes.toolbar}>
+                    <IconButton onClick={toggleDrawer}>
+                        <ChevronLeftIcon />
+                    </IconButton>
+                </div>
+            </ListItem>
             <Divider />
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
+                    <ListItem button key={text} selected={selectedMenu === text}>
                         <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
@@ -62,7 +68,29 @@ function Sidebar(props: SidebarProps) {
                     </ListItem>
                 ))}
             </List>
-        </Drawer>
+        </React.Fragment>
+    );
+    return (
+        <React.Fragment>
+            <MuiThemeProvider theme={sidebarTheme}>
+                <Drawer
+                    variant="permanent"
+                    className={clsx(classes.drawer, {
+                        [classes.drawerOpen]: open,
+                        [classes.drawerClose]: !open,
+                    })}
+                    classes={{
+                        paper: clsx(classes.drawer, {
+                            [classes.drawerOpen]: open,
+                            [classes.drawerClose]: !open,
+                        }),
+                    }}
+                    open={open}
+                >
+                    {menus}
+                </Drawer>
+            </MuiThemeProvider>
+        </React.Fragment>
     );
 }
 

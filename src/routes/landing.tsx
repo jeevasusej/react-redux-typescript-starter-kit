@@ -2,22 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from '../shared/auth/actions/actions';
 import { AuthState } from '../shared/auth/types';
-import Button from '@material-ui/core/Button';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import {
-    Container,
-    CssBaseline,
-    Avatar,
-    Typography,
-    TextField,
-    FormControlLabel,
-    Checkbox,
-    Grid,
-    Box,
-    makeStyles,
-    Link,
-} from '@material-ui/core';
-import { Copyright } from './layout/common/copyright';
+import { CssBaseline, makeStyles } from '@material-ui/core';
 import bg from './../assets/bg-tweed-pattern.png';
 import { LoginContainer } from '../feature/login/containers/loginContainer';
 import { useRouteMatch, Switch, Route, Redirect } from 'react-router-dom';
@@ -42,7 +27,6 @@ const Landing = (props: Props) => {
     const { isLoggedIn } = props;
     const match = useRouteMatch();
     const classes = useStyles();
-    debugger;
 
     return !isLoggedIn ? (
         <div className={classes.container}>

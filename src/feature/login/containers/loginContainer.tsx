@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    Badge,
     Typography,
     Button,
     Container,
@@ -11,20 +10,15 @@ import {
     Grid,
     Link,
     Checkbox,
+    MuiThemeProvider,
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import clsx from 'clsx';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import { DynamicModuleLoader } from 'redux-dynamic-modules';
 import { connect } from 'react-redux';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { fetchLoginAsync } from '../../../shared/auth/actions/actions';
 import { AuthModule } from '../../../shared/auth/module/module';
 import { useStyles } from '../styles/login';
+import { logintheme } from '../styles/logintheme';
 
 interface LoginProps {
     login: typeof fetchLoginAsync.request;
@@ -34,69 +28,68 @@ function Login(props: LoginProps) {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <div className={classes.loginpanelWrapper}>
-                <CssBaseline />
-                <div className={classes.paper}>
-                    <Avatar className={classes.avatar}>
-                        <LockOutlinedIcon />
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
-                        Sign in
-                    </Typography>
-                    <form className={classes.form} noValidate>
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
-                            autoFocus
-                            size="small"
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            name="password"
-                            label="Password"
-                            type="password"
-                            id="password"
-                            size="small"
-                            autoComplete="current-password"
-                        />
+            <MuiThemeProvider theme={logintheme}>
+                <Container component="main" maxWidth="xs">
+                    <CssBaseline />
+                    <div className={classes.paper}>
+                        <Avatar className={classes.avatar}>
+                            <LockOutlinedIcon />
+                        </Avatar>
+                        <Typography component="h5" variant="h5">
+                            Sign in
+                        </Typography>
+                        <form className={classes.form} noValidate>
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="email"
+                                label="Email Address"
+                                name="email"
+                                autoComplete="off"
+                                autoFocus
+                            />
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                name="password"
+                                label="Password"
+                                type="password"
+                                id="password"
+                                autoComplete="current-password"
+                                color="primary"
+                            />
 
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className={classes.submit}
-                            onClick={props.login}
-                        >
-                            Sign In
-                        </Button>
-                        <Grid container alignItems="center">
-                            <Grid item xs>
-                                <Link href="#" variant="body2">
-                                    Forgot password?
-                                </Link>
-                            </Grid>
-                            <Grid item xs container justify="flex-end">
-                                <Link href="#" variant="body2">
+                            <Button
+                                type="button"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className={classes.submit}
+                                onClick={props.login}
+                            >
+                                Sign In
+                            </Button>
+                            <Grid container alignItems="center">
+                                <Grid item xs={12} sm container justify="center">
+                                    <Link href="#" variant="body2" color="textPrimary">
+                                        Forgot password?
+                                    </Link>
+                                </Grid>
+                                <Grid item xs={12} sm container justify="center">
                                     <FormControlLabel
-                                        control={<Checkbox value="remember" color="primary" />}
+                                        control={<Checkbox value="remember" color="secondary" />}
                                         label="Remember me"
                                     />
-                                </Link>
+                                </Grid>
                             </Grid>
-                        </Grid>
-                    </form>
-                </div>
-            </div>
+                        </form>
+                    </div>
+                </Container>
+            </MuiThemeProvider>
         </React.Fragment>
     );
 }

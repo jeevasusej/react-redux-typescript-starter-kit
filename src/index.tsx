@@ -8,11 +8,11 @@ import { ConnectedRouter } from 'connected-react-router';
 import configureStore from './shared/config/configureStore';
 import { createBrowserHistory } from 'history';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import theme from './shared/config/theme';
+import rootTheme from './shared/config/theme';
 
 const history = createBrowserHistory();
 const store = configureStore(history);
-const apptheme = createMuiTheme(theme);
+const apptheme = createMuiTheme(rootTheme);
 
 ReactDOM.render(
     <Provider store={store}>

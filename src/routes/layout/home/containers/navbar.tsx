@@ -30,7 +30,7 @@ function Navbar(props: NavProps) {
     };
     return (
         <AppBar
-            position="absolute"
+            position="fixed"
             className={clsx(classes.appBar, {
                 [classes.appBarShift]: open,
             })}
@@ -47,8 +47,23 @@ function Navbar(props: NavProps) {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" noWrap className={classes.title}>
+                <Typography
+                    variant="h6"
+                    noWrap
+                    className={clsx(classes.title, {
+                        [classes.hide]: open,
+                    })}
+                >
                     React App
+                </Typography>
+                <Typography
+                    variant="h6"
+                    noWrap
+                    className={clsx(classes.title, {
+                        [classes.hide]: !open,
+                    })}
+                >
+                    {' '}
                 </Typography>
                 <div>{name}</div>
                 <IconButton color="inherit">

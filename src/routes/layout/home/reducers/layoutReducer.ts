@@ -4,7 +4,7 @@ import { getType } from 'typesafe-actions';
 // import { fetchLoginAsync } from '../actions/actions';
 
 const intialState: LayoutStateType = {
-    sidbarOpened: false,
+    sidbarOpened: true,
 };
 
 const reducer = (state = intialState, action: actionType.layoutTypes): LayoutStateType => {
