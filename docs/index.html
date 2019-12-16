@@ -2,8 +2,7 @@
 <!-- saved from url=(0022)http://localhost:3000/ -->
 <html lang="en">
     <head>
-      <meta name="google-site-verification" content="rK7iaoluV1OU01--sMcwRkNaseWs11WnGtXGXLgp9qU" />
-       
+        <meta name="google-site-verification" content="rK7iaoluV1OU01--sMcwRkNaseWs11WnGtXGXLgp9qU" />
 
         <link rel="icon" href="http://localhost:3000/favicon.ico" />
         <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png" />
@@ -67,15 +66,106 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root">
-            <div class="App">
-                <header class="App-header">
-                    <img src="logo.svg" class="App-logo" alt="logo" />
-                    <p>Edit <code>src/App.js</code> and save to reload.</p>
-                    <a class="App-link" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"
-                        >Learn React Jeeva</a
+            <p>
+                This project was bootstrapped with
+                <a href="https://github.com/facebook/create-react-app">Create React App</a>.
+            </p>
+            <h4 id="packages-used-with-this-project.">Packages used with this project.</h4>
+            <ul>
+                <li><a href="https://redux.js.org/">redux</a> - A predictable state container for JavaScript apps</li>
+                <li><a href="https://github.com/reduxjs/react-redux">react-redux</a> - React bindings for Redux</li>
+                <li>
+                    <a href="https://redux-saga.js.org/">redux-saga</a> - Redux-saga is a redux middleware library, that
+                    is designed to make handling side effects in your redux app
+                </li>
+                <li><a href="https://reacttraining.com/react-router/web/guides/quick-start">react-router-dom</a></li>
+                <li>
+                    <a href="https://redux-dynamic-modules.js.org/#/">redux-dynamic-modules</a> - Modularize Redux by
+                    dynamically loading reducers and middlewares
+                </li>
+                <li>
+                    <a href="https://github.com/supasate/connected-react-router">connected-react-router</a> - A Redux
+                    binding for React Router v4 - This can be removed based on your need. It is not mandatory
+                </li>
+                <li>
+                    <a href="https://github.com/axios/axios">axios</a> - Promise based HTTP client for the browser and
+                    node.js
+                </li>
+                <li><a href="https://material-ui.com/">material-ui</a> - React components for material design</li>
+                <li>
+                    <a href="https://github.com/lukeed/clsx">clsx</a> - A tiny utility for constructing
+                    <code>className</code> strings conditionally
+                </li>
+                <li>
+                    <a href="https://github.com/ctimmerm/axios-mock-adapter">axios-mock-adapter</a> (Need to be removed
+                    after API implementation) - Axios adapter that allows to easily mock requests
+                </li>
+            </ul>
+            <h4 id="development-dependencies---refer-the-below-links-for-static-type-checking-implementation">
+                Development Dependencies - Refer the below links for Static Type Checking implementation
+            </h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/typescript-cheatsheets/react-typescript-cheatsheet"
+                        >react-typescript-cheatsheet</a
                     >
-                </header>
+                </li>
+                <li>
+                    <a href="https://github.com/piotrwitek/react-redux-typescript-guide"
+                        >react-redux-typescript-guide</a
+                    >
+                </li>
+                <li>
+                    <a href="https://github.com/piotrwitek/typesafe-actions">typesafe-actions</a> - Typesafe utilities
+                    for &quot;action-creators&quot; in Redux / Flux Architecture -<a
+                        href="https://github.com/piotrwitek/utility-types"
+                        >utility-types</a
+                    >
+                    - Collection of utility types, complementing TypeScript built-in mapped types and aliases
+                </li>
+            </ul>
+            <h4 id="eslint-and-prettier-for-development">Eslint and Prettier for development</h4>
+            <ul>
+                <li><a href="https://github.com/prettier/eslint-config-prettier">eslint-config-prettier</a></li>
+                <li><a href="https://github.com/prettier/eslint-plugin-prettier">eslint-plugin-prettier</a></li>
+                <li><a href="https://www.npmjs.com/package/eslint-plugin-react-hooks">eslint-plugin-react-hooks</a></li>
+                <li><a href="https://prettier.io/">Prettier</a></li>
+            </ul>
+            <h4 id="project-folder-structure">Project Folder Structure</h4>
+            <div class="figure">
+                <img
+                    src="folder_structure.PNG"
+                    alt="Folder structure"
+                />
+                <p class="caption">Folder structure</p>
             </div>
+            <p>
+                Based on the redux dynamic modules, features splitted as module. App inital configuration can be found
+                inside the shared/config folder. - configureStore.ts - configuration for setup for the initial app -
+                rootModule.ts - Root module (Redux-dynamic-module) for the redux store - theme.ts - Customized theme
+                configuration for the application. It is based on the react material ui. - types.ts - Root type for
+                redux pros and actions. This type intersect with the upcoming types for
+                <a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types"
+                    >static checking</a
+                >
+            </p>
+            <p>
+                Each feature module can contain the following default folders. - actions - Actions for the react redux -
+                api - All api related functionality goes here - components - Feature module components, which is not
+                connected to the redux - containers - Redux HOC - all the containers goes here - module - Redux dynamic
+                module file has been declared in this folder. Folder can be removed. - reducers - Feature module's
+                reducers - saga - Side effects related to feature module - types - Types related to feature module -
+                styles - Styles for current feature
+            </p>
+            <h4 id="routes">Routes</h4>
+            <p>
+                Nested routes added to this started kit. Home represents routes after logged in. Landing represents -
+                routes before login. This is useful and handy when we have different kind of layout for the landing
+                pages and the dashboard pages. The layout folder contains common components shared with Home and
+                Landing. These routes contain the common layout that can be shared with the feature module.
+            </p>
+            <h3 id="feature-folder">Feature folder</h3>
+            <p>All feature related develoment will goes here.</p>
         </div>
     </body>
 </html>
