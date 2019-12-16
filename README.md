@@ -28,6 +28,7 @@ Eslint and Prettier for development
 Project Folder Structure
 
 ![Folder structure](https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/folder_structure.PNG)
+
 Based on the redux dynamic modules, features splitted as module.
 App inital configuration can be found inside the shared/config folder. 
 - configureStore.ts - configuration for setup for the initial app
