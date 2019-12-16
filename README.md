@@ -18,5 +18,8 @@ Development Dependencies - Refer the below links for Static Type Checking implem
 - [typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Typesafe utilities for "action-creators" in Redux / Flux Architecture 
 -[utility-types](https://github.com/piotrwitek/utility-types) - Collection of utility types, complementing TypeScript built-in mapped types and aliases
 
-Eslint and Prettier
-- eslint-config-prettier
+Eslint and Prettier for development
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [Prettier](https://prettier.io/)
