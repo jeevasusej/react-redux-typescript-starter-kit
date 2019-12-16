@@ -25,3 +25,33 @@ Eslint and Prettier for development
 - [Prettier](https://prettier.io/)
 
 
+Project Folder Structure
+
+![Folder structure](https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/folder_structure.PNG)
+Based on the redux dynamic modules, features splitted as module.
+App inital configuration can be found inside the shared/config folder. 
+- configureStore.ts - configuration for setup for the initial app
+- rootModule.ts     - Root module (Redux-dynamic-module) for the redux store
+- theme.ts          - Customized theme configuration for the application. It is based on the react material ui.
+- types.ts          - Root type for redux pros and actions. This type intersect with the upcoming types for [static checking](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types)
+
+Each feature module can contain the following default folders. 
+- actions     - Actions for the react redux
+- api         - All api related functionality goes here
+- components  - Feature module components, which is not connected to the redux
+- containers  - Redux HOC - all the containers goes here
+- module      - Redux dynamic module file has been declared in this folder. Folder can be removed.
+- reducers    - Feature module's reducers
+- saga        - Side effects related to feature module
+- types       - Types related to feature module
+- styles      - Styles for current feature
+
+Routes
+
+Nested routes added to this started kit. 
+Home represents routes after logged in
+Landing represents - routes before log in.
+
+Layout contains common components that shared with Home and Landing.
+
+
