@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css",
-    "main.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.00e8b2f7.chunk.js",
-    "main.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.00e8b2f7.chunk.js.map",
-    "runtime-main.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.e5942e33.js",
-    "runtime-main.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.e5942e33.js.map",
-    "static/js/2.d00f4611.chunk.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js",
-    "static/js/2.d00f4611.chunk.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.map",
-    "index.html": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/index.html",
-    "precache-manifest.907a8096be3735d09f5618a6b605c6ea.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/precache-manifest.907a8096be3735d09f5618a6b605c6ea.js",
-    "service-worker.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/service-worker.js",
-    "static/css/main.dfca195d.chunk.css.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css.map",
-    "static/js/2.d00f4611.chunk.js.LICENSE": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.LICENSE",
-    "static/media/bg-tweed-pattern.png": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/media/bg-tweed-pattern.bfc9b983.png"
+    "main.css": "/main.dfca195d.chunk.css",
+    "main.js": "/main.6d43106a.chunk.js",
+    "main.js.map": "/main.6d43106a.chunk.js.map",
+    "runtime-main.js": "/runtime-main.39a3a5ee.js",
+    "runtime-main.js.map": "/runtime-main.39a3a5ee.js.map",
+    "2.d00f4611.chunk.js": "/2.d00f4611.chunk.js",
+    "2.d00f4611.chunk.js.map": "/2.d00f4611.chunk.js.map",
+    "2.d00f4611.chunk.js.LICENSE": "/2.d00f4611.chunk.js.LICENSE",
+    "bg-tweed-pattern.png": "/bg-tweed-pattern.bfc9b983.png",
+    "index.html": "/index.html",
+    "main.dfca195d.chunk.css.map": "/main.dfca195d.chunk.css.map",
+    "precache-manifest.a750dfc27d4d302eb49b9259df50c2ed.js": "/precache-manifest.a750dfc27d4d302eb49b9259df50c2ed.js",
+    "service-worker.js": "/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5942e33.js",
-    "static/js/2.d00f4611.chunk.js",
-    "static/css/main.dfca195d.chunk.css",
-    "static/js/main.00e8b2f7.chunk.js"
+    "runtime-main.39a3a5ee.js",
+    "2.d00f4611.chunk.js",
+    "main.dfca195d.chunk.css",
+    "main.6d43106a.chunk.js"
   ]
 }
