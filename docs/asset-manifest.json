@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfca195d.chunk.css",
-    "main.js": "/static/js/main.ae331049.chunk.js",
-    "main.js.map": "/static/js/main.ae331049.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.39a3a5ee.js",
-    "runtime-main.js.map": "/static/js/runtime-main.39a3a5ee.js.map",
-    "static/js/2.d00f4611.chunk.js": "/static/js/2.d00f4611.chunk.js",
-    "static/js/2.d00f4611.chunk.js.map": "/static/js/2.d00f4611.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.159f59055976b90700d7e2023e61d8bb.js": "/precache-manifest.159f59055976b90700d7e2023e61d8bb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.dfca195d.chunk.css.map": "/static/css/main.dfca195d.chunk.css.map",
-    "static/js/2.d00f4611.chunk.js.LICENSE": "/static/js/2.d00f4611.chunk.js.LICENSE",
-    "static/media/bg-tweed-pattern.png": "/static/media/bg-tweed-pattern.bfc9b983.png"
+    "main.css": "/tree/master/docs/static/css/main.dfca195d.chunk.css",
+    "main.js": "/tree/master/docs/static/js/main.a72f3772.chunk.js",
+    "main.js.map": "/tree/master/docs/static/js/main.a72f3772.chunk.js.map",
+    "runtime-main.js": "/tree/master/docs/static/js/runtime-main.70e5d209.js",
+    "runtime-main.js.map": "/tree/master/docs/static/js/runtime-main.70e5d209.js.map",
+    "static/js/2.d00f4611.chunk.js": "/tree/master/docs/static/js/2.d00f4611.chunk.js",
+    "static/js/2.d00f4611.chunk.js.map": "/tree/master/docs/static/js/2.d00f4611.chunk.js.map",
+    "index.html": "/tree/master/docs/index.html",
+    "precache-manifest.6e89cae8ffa52e1679fd116aa12abf08.js": "/tree/master/docs/precache-manifest.6e89cae8ffa52e1679fd116aa12abf08.js",
+    "service-worker.js": "/tree/master/docs/service-worker.js",
+    "static/css/main.dfca195d.chunk.css.map": "/tree/master/docs/static/css/main.dfca195d.chunk.css.map",
+    "static/js/2.d00f4611.chunk.js.LICENSE": "/tree/master/docs/static/js/2.d00f4611.chunk.js.LICENSE",
+    "static/media/bg-tweed-pattern.png": "/tree/master/docs/static/media/bg-tweed-pattern.bfc9b983.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.39a3a5ee.js",
+    "static/js/runtime-main.70e5d209.js",
     "static/js/2.d00f4611.chunk.js",
     "static/css/main.dfca195d.chunk.css",
-    "static/js/main.ae331049.chunk.js"
+    "static/js/main.a72f3772.chunk.js"
   ]
 }
