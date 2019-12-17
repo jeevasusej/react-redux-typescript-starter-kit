@@ -1,84 +1,103 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:3000/ -->
 <html lang="en">
     <head>
         <meta name="google-site-verification" content="s3zFj6lceJ-IKjdp7klQ-ZWKTzBrSHdj3rqpdqNnITE" />
-
-        <link rel="icon" href="http://localhost:3000/favicon.ico" />
-        <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png" />
-
-        <link rel="manifest" href="http://localhost:3000/manifest.json" />
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site created using create-react-app" />
+        <link rel="apple-touch-icon" href="logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <title>React App</title>
-        <style>
-            body {
-                margin: 0;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-                    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-
-            code {
-                font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-            }
-        </style>
-        <style>
-            .App {
-                text-align: center;
-            }
-
-            .App-logo {
-                height: 40vmin;
-                pointer-events: none;
-            }
-
-            @media (prefers-reduced-motion: no-preference) {
-                .App-logo {
-                    animation: App-logo-spin infinite 20s linear;
-                }
-            }
-
-            .App-header {
-                background-color: #282c34;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-size: calc(10px + 2vmin);
-                color: white;
-            }
-
-            .App-link {
-                color: #61dafb;
-            }
-
-            @keyframes App-logo-spin {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
-            }
-        </style>
+        <link href="/static/css/main.dfca195d.chunk.css" rel="stylesheet" />
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root">
-            <div class="App">
-                <header class="App-header">
-                    <img src="logo.svg" class="App-logo" alt="logo" />
-
-                    <a
-                        class="App-link"
-                        href="https://github.com/jeevasusej/react-redux-typescript-starter-kit"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >react-redux-typescript-starter-kit</a
-                    >
-                </header>
-            </div>
-        </div>
+        <div id="root"></div>
+        <script>
+            !(function(l) {
+                function e(e) {
+                    for (var t, r, n = e[0], o = e[1], u = e[2], a = 0, i = []; a < n.length; a++)
+                        (r = n[a]), Object.prototype.hasOwnProperty.call(c, r) && c[r] && i.push(c[r][0]), (c[r] = 0);
+                    for (t in o) Object.prototype.hasOwnProperty.call(o, t) && (l[t] = o[t]);
+                    for (s && s(e); i.length; ) i.shift()();
+                    return p.push.apply(p, u || []), f();
+                }
+                function f() {
+                    for (var e, t = 0; t < p.length; t++) {
+                        for (var r = p[t], n = !0, o = 1; o < r.length; o++) {
+                            var u = r[o];
+                            0 !== c[u] && (n = !1);
+                        }
+                        n && (p.splice(t--, 1), (e = a((a.s = r[0]))));
+                    }
+                    return e;
+                }
+                var r = {},
+                    c = { 1: 0 },
+                    p = [];
+                function a(e) {
+                    if (r[e]) return r[e].exports;
+                    var t = (r[e] = { i: e, l: !1, exports: {} });
+                    return l[e].call(t.exports, t, t.exports, a), (t.l = !0), t.exports;
+                }
+                (a.m = l),
+                    (a.c = r),
+                    (a.d = function(e, t, r) {
+                        a.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
+                    }),
+                    (a.r = function(e) {
+                        'undefined' != typeof Symbol &&
+                            Symbol.toStringTag &&
+                            Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+                            Object.defineProperty(e, '__esModule', { value: !0 });
+                    }),
+                    (a.t = function(t, e) {
+                        if ((1 & e && (t = a(t)), 8 & e)) return t;
+                        if (4 & e && 'object' == typeof t && t && t.__esModule) return t;
+                        var r = Object.create(null);
+                        if (
+                            (a.r(r),
+                            Object.defineProperty(r, 'default', { enumerable: !0, value: t }),
+                            2 & e && 'string' != typeof t)
+                        )
+                            for (var n in t)
+                                a.d(
+                                    r,
+                                    n,
+                                    function(e) {
+                                        return t[e];
+                                    }.bind(null, n),
+                                );
+                        return r;
+                    }),
+                    (a.n = function(e) {
+                        var t =
+                            e && e.__esModule
+                                ? function() {
+                                      return e.default;
+                                  }
+                                : function() {
+                                      return e;
+                                  };
+                        return a.d(t, 'a', t), t;
+                    }),
+                    (a.o = function(e, t) {
+                        return Object.prototype.hasOwnProperty.call(e, t);
+                    }),
+                    (a.p = '/');
+                var t = (this['webpackJsonpdevice-management'] = this['webpackJsonpdevice-management'] || []),
+                    n = t.push.bind(t);
+                (t.push = e), (t = t.slice());
+                for (var o = 0; o < t.length; o++) e(t[o]);
+                var s = n;
+                f();
+            })([]);
+        </script>
+        <script src="/static/js/2.d00f4611.chunk.js"></script>
+        <script src="/static/js/main.ae331049.chunk.js"></script>
     </body>
 </html>
