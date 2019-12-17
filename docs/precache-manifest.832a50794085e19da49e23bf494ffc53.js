@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9141f3230f4c01f70578a1638947accb",
+    "revision": "f0c9bf34958e312af1b739cbdb5ba2d5",
     "url": "/react-redux-typescript-starter-kit/index.html"
   },
   {
-    "revision": "53e576b0d0a99f1ef6f8",
+    "revision": "263ad9643a420c12f6a5",
     "url": "/react-redux-typescript-starter-kit/static/css/main.dfca195d.chunk.css"
   },
   {
-    "revision": "444b5dbfad6d133eff5c",
-    "url": "/react-redux-typescript-starter-kit/static/js/2.d00f4611.chunk.js"
+    "revision": "92aaa390199525ae588d",
+    "url": "/react-redux-typescript-starter-kit/static/js/2.07e3ec38.chunk.js"
   },
   {
     "revision": "37ef80829e57f4a0c2aa4bfe70fe2cf3",
-    "url": "/react-redux-typescript-starter-kit/static/js/2.d00f4611.chunk.js.LICENSE"
+    "url": "/react-redux-typescript-starter-kit/static/js/2.07e3ec38.chunk.js.LICENSE"
   },
   {
-    "revision": "53e576b0d0a99f1ef6f8",
-    "url": "/react-redux-typescript-starter-kit/static/js/main.73739221.chunk.js"
+    "revision": "263ad9643a420c12f6a5",
+    "url": "/react-redux-typescript-starter-kit/static/js/main.b6f6f6d2.chunk.js"
   },
   {
     "revision": "e6a02628dfed071d7a10",

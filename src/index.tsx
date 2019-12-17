@@ -9,6 +9,7 @@ import configureStore from './shared/config/configureStore';
 import { createBrowserHistory } from 'history';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import rootTheme from './shared/config/theme';
+import { HashRouter } from 'react-router-dom';
 
 const history = createBrowserHistory();
 const store = configureStore(history);
@@ -18,7 +19,9 @@ ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <MuiThemeProvider theme={apptheme}>
-                <App />
+                <HashRouter>
+                    <App />
+                </HashRouter>
             </MuiThemeProvider>
             {/* <BrowserRouter>
                 <App />
