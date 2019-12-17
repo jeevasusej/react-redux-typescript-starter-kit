@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css",
-    "main.js": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.4d927326.chunk.js",
-    "main.js.map": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.4d927326.chunk.js.map",
-    "runtime-main.js": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.c0f1f911.js",
-    "runtime-main.js.map": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.c0f1f911.js.map",
-    "static/js/2.d00f4611.chunk.js": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js",
-    "static/js/2.d00f4611.chunk.js.map": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.map",
-    "index.html": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/index.html",
-    "precache-manifest.c1b16c37084db887689e5f589b9130cd.js": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/precache-manifest.c1b16c37084db887689e5f589b9130cd.js",
-    "service-worker.js": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/service-worker.js",
-    "static/css/main.dfca195d.chunk.css.map": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css.map",
-    "static/js/2.d00f4611.chunk.js.LICENSE": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.LICENSE",
-    "static/media/bg-tweed-pattern.png": "https://github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/media/bg-tweed-pattern.bfc9b983.png"
+    "main.css": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css",
+    "main.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.00e8b2f7.chunk.js",
+    "main.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/main.00e8b2f7.chunk.js.map",
+    "runtime-main.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.e5942e33.js",
+    "runtime-main.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/runtime-main.e5942e33.js.map",
+    "static/js/2.d00f4611.chunk.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js",
+    "static/js/2.d00f4611.chunk.js.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.map",
+    "index.html": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/index.html",
+    "precache-manifest.907a8096be3735d09f5618a6b605c6ea.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/precache-manifest.907a8096be3735d09f5618a6b605c6ea.js",
+    "service-worker.js": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/service-worker.js",
+    "static/css/main.dfca195d.chunk.css.map": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/css/main.dfca195d.chunk.css.map",
+    "static/js/2.d00f4611.chunk.js.LICENSE": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/js/2.d00f4611.chunk.js.LICENSE",
+    "static/media/bg-tweed-pattern.png": "//github.com/jeevasusej/react-redux-typescript-starter-kit/blob/master/docs/static/media/bg-tweed-pattern.bfc9b983.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0f1f911.js",
+    "static/js/runtime-main.e5942e33.js",
     "static/js/2.d00f4611.chunk.js",
     "static/css/main.dfca195d.chunk.css",
-    "static/js/main.4d927326.chunk.js"
+    "static/js/main.00e8b2f7.chunk.js"
   ]
 }
