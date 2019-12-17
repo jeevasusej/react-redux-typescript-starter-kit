@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/main.dfca195d.chunk.css",
-    "main.js": "/main.6d43106a.chunk.js",
-    "main.js.map": "/main.6d43106a.chunk.js.map",
-    "runtime-main.js": "/runtime-main.39a3a5ee.js",
-    "runtime-main.js.map": "/runtime-main.39a3a5ee.js.map",
-    "2.d00f4611.chunk.js": "/2.d00f4611.chunk.js",
-    "2.d00f4611.chunk.js.map": "/2.d00f4611.chunk.js.map",
-    "2.d00f4611.chunk.js.LICENSE": "/2.d00f4611.chunk.js.LICENSE",
-    "bg-tweed-pattern.png": "/bg-tweed-pattern.bfc9b983.png",
-    "index.html": "/index.html",
-    "main.dfca195d.chunk.css.map": "/main.dfca195d.chunk.css.map",
-    "precache-manifest.a750dfc27d4d302eb49b9259df50c2ed.js": "/precache-manifest.a750dfc27d4d302eb49b9259df50c2ed.js",
-    "service-worker.js": "/service-worker.js"
+    "main.css": "/react-redux-typescript-starter-kit/main.dfca195d.chunk.css",
+    "main.js": "/react-redux-typescript-starter-kit/main.944391b8.chunk.js",
+    "main.js.map": "/react-redux-typescript-starter-kit/main.944391b8.chunk.js.map",
+    "runtime-main.js": "/react-redux-typescript-starter-kit/runtime-main.e0573a2c.js",
+    "runtime-main.js.map": "/react-redux-typescript-starter-kit/runtime-main.e0573a2c.js.map",
+    "2.d00f4611.chunk.js": "/react-redux-typescript-starter-kit/2.d00f4611.chunk.js",
+    "2.d00f4611.chunk.js.map": "/react-redux-typescript-starter-kit/2.d00f4611.chunk.js.map",
+    "2.d00f4611.chunk.js.LICENSE": "/react-redux-typescript-starter-kit/2.d00f4611.chunk.js.LICENSE",
+    "bg-tweed-pattern.png": "/react-redux-typescript-starter-kit/bg-tweed-pattern.bfc9b983.png",
+    "index.html": "/react-redux-typescript-starter-kit/index.html",
+    "main.dfca195d.chunk.css.map": "/react-redux-typescript-starter-kit/main.dfca195d.chunk.css.map",
+    "precache-manifest.f9ffcba61b48e769becdd4656eef6317.js": "/react-redux-typescript-starter-kit/precache-manifest.f9ffcba61b48e769becdd4656eef6317.js",
+    "service-worker.js": "/react-redux-typescript-starter-kit/service-worker.js"
   },
   "entrypoints": [
-    "runtime-main.39a3a5ee.js",
+    "runtime-main.e0573a2c.js",
     "2.d00f4611.chunk.js",
     "main.dfca195d.chunk.css",
-    "main.6d43106a.chunk.js"
+    "main.944391b8.chunk.js"
   ]
 }
