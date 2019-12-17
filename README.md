@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Sample demo page
+https://jeevasusej.github.io/react-redux-typescript-starter-kit/
 
 #### Packages used with this project.
 - [redux](https://redux.js.org/) - A predictable state container for JavaScript apps
