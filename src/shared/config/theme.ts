@@ -1,9 +1,9 @@
-import { ThemeOptions, Theme } from '@material-ui/core/styles/createMuiTheme';
+import { ThemeOptions, createTheme } from '@material-ui/core/styles';
 import * as Colors from '@material-ui/core/colors';
 import { Breakpoint } from '@material-ui/core/styles/createBreakpoints';
 
 // Reference : https://material-ui.com/guides/typescript/#customization-of-theme
-declare module '@material-ui/core/styles/createMuiTheme' {
+declare module '@material-ui/core/styles' {
     interface Theme {
         appDrawer: {
             width: React.CSSProperties['width'];
